@@ -1,92 +1,142 @@
-# myLeague App
+
+![myLeague_dark](https://github.com/BlazejakPiotr/MyLeagueApp/assets/67067881/834666ab-1fdd-4f71-a61c-18ba1067cc82)
 
 
+## Table of content
 
-## Getting started
+- [1. Introduction](#1-introduction)
+- [2. Description](#2-description)
+- [3. Tech Stack](#3-tech-stack)
+- [4. Navbar](#4-navbar)
+- [5. Screens](#5-screens)
+  - [5.1. Splash screen](#51-splash-screen)
+  - [5.2. Fill profile screen](#52-fill-profile-screen)
+  - [5.3. Home Tab](#53-home-tab)
+    - [**5.3.1. Match screen details**](#531-match-screen-details)
+  - [5.4. Champions Tab](#54-champions-tab)
+    - [**5.4.1. Champion details screen**](#541-champion-details-screen)
+  - [5.5. Items Tab](#55-items-tab)
+    - [**5.5.1 Item details screen**](#551-item-details-screen)
+  - [5.6. Leaderboard Tab](#56-leaderboard-tab)
+- [6. Design](#6-design)
+  - [6.1. Color palette \& typography](#61-color-palette--typography)
+  - [6.2. Prototypes](#62-prototypes)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+# 1. Introduction
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Hello I'm Piotr, and I'm Sofware Engineer currently working as a Junior React-Native Developer.
+I've decided to start my personal project but this time I'll be streaming everything live on twitch.tv and then upload recordings on my youtube channel. I'm planning to stream for 1 hour, 4-5 times a week.
 
-## Add your files
+Would you like to visit me on stream or watch recordings? Or maybe you have question or just want to talk with me?
+Here are my social media where you can reach me out.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- DISCORD:
+- YOUTUBE:
+- TWITCH:
+- LINKEDIN:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/piotr.blaz/myleague-app.git
-git branch -M main
-git push -uf origin main
-```
+# 2. Description
 
-## Integrate with your tools
+MyLeague is a mobile application for Android and iOS where you can find League of Legends data such as:
 
-- [ ] [Set up project integrations](https://gitlab.com/piotr.blaz/myleague-app/-/settings/integrations)
+- all champions with detailed info about them (skills, lore, photos etc) with search and filtering (eg. current champion pool)
+- all items with detailed info about them (price, stats etc)
+- Summoners profile including last matches, champion mastery, current rank and search for other Summoners
+- leaderboard with players in selected region and search for player by his Summoner name
 
-## Collaborate with your team
+The myLeague application is an open-source, non-profit and educational project built from scratch by me, live on my Twitch channel and if you want to follow but can't watch live stream then you can watch the recordings on my YouTube channel.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+I'm just a Junior Developer so don't treat it as a tutorial. There'll be a lot of mistakes, and it's clue of this project.
 
-## Test and Deploy
+Want to code along with me? Feel free to do it, and if you have any doubts, reach me on my socials, I'll do my best to help.
 
-Use the built-in continuous integration in GitLab.
+# 3. Tech Stack
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- Figma
+- React Native
+- TypeScript
+- RIOT API
 
-***
+# 4. Navbar
 
-# Editing this README
+Bottom nav:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+- Home
+- Champions
+- Items
+- Leaderboard
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Top nav:
 
-## Name
-Choose a self-explaining name for your project.
+- Tabs specified for each screen
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+# 5. Screens
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+<div style="margin-left: 30px">
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## 5.1. Splash screen
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Screen with MyLeague logo displayed for two seconds while application launch</p>
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## 5.2. Fill profile screen
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Displayed after Splash screen if user profile is not filled.
+There are mandatory fields to fill:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- Language selection, default language based on system language (additional feature)
+- Region (eg. EUW, BR, NA etc)
+- Summoners name
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+This data is stored in Async storage so users don’t have to fill them every time while the application runs.
+Screen is also available from Home screen
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## 5.3. Home Tab
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+This is the main screen where users always land. When screen refreshes there’s user profile provided in Fill profile screen but users can find other Summoners by searchbar providing their names and regions.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Home tabs:
 
-## License
-For open source projects, say how it is licensed.
+- Overview: Summoners data such as stats bar, most played champs, ranked stats
+- Champions: Summoners champions stats and mastery
+- Match history: Summoners match history
+- Statistics: Summoner stats
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### <p style="margin-left: 30px">**5.3.1. Match screen details**</p>
+
+<p style="margin-left: 30px">Details for each match…</p>
+
+## 5.4. Champions Tab
+
+List of all champions in the game with searchbar, filters by role, free champion rotation, etc.
+
+### <p style="margin-left: 30px">**5.4.1. Champion details screen**</p>
+
+<p style="margin-left: 30px">Champion screen with detailed information about selected champion eg. lore, stats, abilities, skins etc.
+
+## 5.5. Items Tab
+
+List of all items in the game with searchbar, filters by type (attack speed, magic resist) etc.
+
+### <p style="margin-left: 30px">**5.5.1 Item details screen**</p>
+
+ <p style="margin-left: 30px"> Item detail view</p>
+
+## 5.6. Leaderboard Tab
+
+Leaderboard for Challenger/GM/Master
+
+</div>
+
+# 6. Design
+
+This app is designed by me in figma using League of Legends color palette & typography
+
+<div style="margin-left: 30px">
+
+## 6.1. Color palette & typography
+
+![colors_pallete_typography](https://github.com/BlazejakPiotr/MyLeagueApp/assets/67067881/02922f24-dc42-4ea6-b433-1ee1ae5515f8)
+
+## 6.2. Prototypes
+
+</div>
