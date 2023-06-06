@@ -1,6 +1,7 @@
 {
   "name": "myLeague_mobile",
   "version": "0.0.1",
+  "main": "App.tsx",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
