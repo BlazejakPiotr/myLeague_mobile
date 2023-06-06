@@ -14,6 +14,22 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-myLeague_mobile-myLeague_mobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-myLeague_mobile-myLeague_mobileTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		006DA1B42857483B9D97A6E7 /* BeaufortforLOL-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E1E139D28C24E6B9F7B16F8 /* BeaufortforLOL-Bold.ttf */; };
+		B61CD9A43DA6411CBBCD0F00 /* BeaufortforLOL-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7829FEE35384C2AA12134FB /* BeaufortforLOL-BoldItalic.ttf */; };
+		60225F89EF5B43E3B55CCC2A /* BeaufortforLOL-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C269DA3FC53E4BD882DF3D49 /* BeaufortforLOL-Heavy.ttf */; };
+		F0D74C6900184F43944EAE98 /* BeaufortforLOL-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A78CF075BD324E46B8684394 /* BeaufortforLOL-HeavyItalic.ttf */; };
+		C75D2E40858549428A513E6E /* BeaufortforLOL-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 490FD318B00F40F0A554258E /* BeaufortforLOL-Italic.ttf */; };
+		A80DD136193B487B9202EDF3 /* BeaufortforLOL-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 486DFAF3355D48728B48BA0B /* BeaufortforLOL-Light.ttf */; };
+		0E59D53B16C94A569F56FE4F /* BeaufortforLOL-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FFAB46E618A47879EF3D9F2 /* BeaufortforLOL-LightItalic.ttf */; };
+		891419D4B0FE4C309E586F3C /* BeaufortforLOL-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8152AA2DC47C4B719D497805 /* BeaufortforLOL-Medium.ttf */; };
+		4C801C1B23094171B4A375AB /* BeaufortforLOL-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3289693F4470408CA09EEE8E /* BeaufortforLOL-MediumItalic.ttf */; };
+		FC36F9AAA7BD45458F592ED6 /* BeaufortforLOL-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41FDACEC0BA6431F9D4E6BD8 /* BeaufortforLOL-Regular.ttf */; };
+		39BC534C306949DCB187C9D4 /* Spiegel_TT_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB083385E8C74060AD7BA8EF /* Spiegel_TT_Bold.ttf */; };
+		13120899020246919EBD5ED3 /* Spiegel_TT_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F7864DBD0A743588F482AB0 /* Spiegel_TT_Bold_Italic.ttf */; };
+		79F74D3F620448EC959D018B /* Spiegel_TT_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C5CF0EE8644E4B92CDEF9 /* Spiegel_TT_Regular.ttf */; };
+		90938FB7541D4D54AC63229C /* Spiegel_TT_Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53087A584CD94D0999B34510 /* Spiegel_TT_Regular_Italic.ttf */; };
+		6A68A9499AB44CCBBF71C582 /* Spiegel_TT_SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07321D96E5F04A649D7E9247 /* Spiegel_TT_SemiBold.ttf */; };
+		490A84E760E541D18B48F5D7 /* Spiegel_TT_SemiBold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96C17D6E528048548F2E8E99 /* Spiegel_TT_SemiBold_Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,22 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = myLeague_mobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-myLeague_mobile-myLeague_mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLeague_mobile-myLeague_mobileTests.release.xcconfig"; path = "Target Support Files/Pods-myLeague_mobile-myLeague_mobileTests/Pods-myLeague_mobile-myLeague_mobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9E1E139D28C24E6B9F7B16F8 /* BeaufortforLOL-Bold.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-Bold.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C7829FEE35384C2AA12134FB /* BeaufortforLOL-BoldItalic.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-BoldItalic.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C269DA3FC53E4BD882DF3D49 /* BeaufortforLOL-Heavy.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-Heavy.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A78CF075BD324E46B8684394 /* BeaufortforLOL-HeavyItalic.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-HeavyItalic.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-HeavyItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		490FD318B00F40F0A554258E /* BeaufortforLOL-Italic.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-Italic.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		486DFAF3355D48728B48BA0B /* BeaufortforLOL-Light.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-Light.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0FFAB46E618A47879EF3D9F2 /* BeaufortforLOL-LightItalic.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-LightItalic.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8152AA2DC47C4B719D497805 /* BeaufortforLOL-Medium.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-Medium.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3289693F4470408CA09EEE8E /* BeaufortforLOL-MediumItalic.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-MediumItalic.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		41FDACEC0BA6431F9D4E6BD8 /* BeaufortforLOL-Regular.ttf */ = {isa = PBXFileReference; name = "BeaufortforLOL-Regular.ttf"; path = "../src/assets/fonts/BeaufortForLoL-TTF/BeaufortforLOL-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB083385E8C74060AD7BA8EF /* Spiegel_TT_Bold.ttf */ = {isa = PBXFileReference; name = "Spiegel_TT_Bold.ttf"; path = "../src/assets/fonts/Spiegel-TTF/Spiegel_TT_Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F7864DBD0A743588F482AB0 /* Spiegel_TT_Bold_Italic.ttf */ = {isa = PBXFileReference; name = "Spiegel_TT_Bold_Italic.ttf"; path = "../src/assets/fonts/Spiegel-TTF/Spiegel_TT_Bold_Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B9C5CF0EE8644E4B92CDEF9 /* Spiegel_TT_Regular.ttf */ = {isa = PBXFileReference; name = "Spiegel_TT_Regular.ttf"; path = "../src/assets/fonts/Spiegel-TTF/Spiegel_TT_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		53087A584CD94D0999B34510 /* Spiegel_TT_Regular_Italic.ttf */ = {isa = PBXFileReference; name = "Spiegel_TT_Regular_Italic.ttf"; path = "../src/assets/fonts/Spiegel-TTF/Spiegel_TT_Regular_Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		07321D96E5F04A649D7E9247 /* Spiegel_TT_SemiBold.ttf */ = {isa = PBXFileReference; name = "Spiegel_TT_SemiBold.ttf"; path = "../src/assets/fonts/Spiegel-TTF/Spiegel_TT_SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		96C17D6E528048548F2E8E99 /* Spiegel_TT_SemiBold_Italic.ttf */ = {isa = PBXFileReference; name = "Spiegel_TT_SemiBold_Italic.ttf"; path = "../src/assets/fonts/Spiegel-TTF/Spiegel_TT_SemiBold_Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +154,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				837B6F210990409184AF11FA /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +180,30 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		837B6F210990409184AF11FA /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9E1E139D28C24E6B9F7B16F8 /* BeaufortforLOL-Bold.ttf */,
+				C7829FEE35384C2AA12134FB /* BeaufortforLOL-BoldItalic.ttf */,
+				C269DA3FC53E4BD882DF3D49 /* BeaufortforLOL-Heavy.ttf */,
+				A78CF075BD324E46B8684394 /* BeaufortforLOL-HeavyItalic.ttf */,
+				490FD318B00F40F0A554258E /* BeaufortforLOL-Italic.ttf */,
+				486DFAF3355D48728B48BA0B /* BeaufortforLOL-Light.ttf */,
+				0FFAB46E618A47879EF3D9F2 /* BeaufortforLOL-LightItalic.ttf */,
+				8152AA2DC47C4B719D497805 /* BeaufortforLOL-Medium.ttf */,
+				3289693F4470408CA09EEE8E /* BeaufortforLOL-MediumItalic.ttf */,
+				41FDACEC0BA6431F9D4E6BD8 /* BeaufortforLOL-Regular.ttf */,
+				DB083385E8C74060AD7BA8EF /* Spiegel_TT_Bold.ttf */,
+				7F7864DBD0A743588F482AB0 /* Spiegel_TT_Bold_Italic.ttf */,
+				5B9C5CF0EE8644E4B92CDEF9 /* Spiegel_TT_Regular.ttf */,
+				53087A584CD94D0999B34510 /* Spiegel_TT_Regular_Italic.ttf */,
+				07321D96E5F04A649D7E9247 /* Spiegel_TT_SemiBold.ttf */,
+				96C17D6E528048548F2E8E99 /* Spiegel_TT_SemiBold_Italic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +301,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				006DA1B42857483B9D97A6E7 /* BeaufortforLOL-Bold.ttf in Resources */,
+				B61CD9A43DA6411CBBCD0F00 /* BeaufortforLOL-BoldItalic.ttf in Resources */,
+				60225F89EF5B43E3B55CCC2A /* BeaufortforLOL-Heavy.ttf in Resources */,
+				F0D74C6900184F43944EAE98 /* BeaufortforLOL-HeavyItalic.ttf in Resources */,
+				C75D2E40858549428A513E6E /* BeaufortforLOL-Italic.ttf in Resources */,
+				A80DD136193B487B9202EDF3 /* BeaufortforLOL-Light.ttf in Resources */,
+				0E59D53B16C94A569F56FE4F /* BeaufortforLOL-LightItalic.ttf in Resources */,
+				891419D4B0FE4C309E586F3C /* BeaufortforLOL-Medium.ttf in Resources */,
+				4C801C1B23094171B4A375AB /* BeaufortforLOL-MediumItalic.ttf in Resources */,
+				FC36F9AAA7BD45458F592ED6 /* BeaufortforLOL-Regular.ttf in Resources */,
+				39BC534C306949DCB187C9D4 /* Spiegel_TT_Bold.ttf in Resources */,
+				13120899020246919EBD5ED3 /* Spiegel_TT_Bold_Italic.ttf in Resources */,
+				79F74D3F620448EC959D018B /* Spiegel_TT_Regular.ttf in Resources */,
+				90938FB7541D4D54AC63229C /* Spiegel_TT_Regular_Italic.ttf in Resources */,
+				6A68A9499AB44CCBBF71C582 /* Spiegel_TT_SemiBold.ttf in Resources */,
+				490A84E760E541D18B48F5D7 /* Spiegel_TT_SemiBold_Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
