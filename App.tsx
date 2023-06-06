@@ -1,8 +1,8 @@
 import React from 'react';
-import {Text} from 'react-native';
+import AppText from './src/components/_common/AppText';
 
 const App: React.FC = () => {
-  return <Text>Hello</Text>;
+  return <AppText>Hello</AppText>;
 };
 
 export default App;
