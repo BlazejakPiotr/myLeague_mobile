@@ -1,8 +1,20 @@
 import React from 'react';
-import AppText from './src/components/_common/AppText';
-
+import {KeyboardAvoidingView, Platform} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {AppNavigator} from './src/navigation/AppNavigator';
+import {StoreProvider} from './src/store/StoreProvider';
 const App: React.FC = () => {
-  return <AppText>Hello</AppText>;
+  return (
+    <StoreProvider>
+      <SafeAreaProvider>
+        <KeyboardAvoidingView
+          style={{flex: 1}}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+          <AppNavigator />
+        </KeyboardAvoidingView>
+      </SafeAreaProvider>
+    </StoreProvider>
+  );
 };
 
 export default App;
