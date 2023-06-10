@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Svg, {Path, G, Defs} from 'react-native-svg';
+import Svg, {Path, G, Defs, ClipPath, Rect} from 'react-native-svg';
 
 export function ItemsSvg(props: any) {
   return (
@@ -17,9 +17,9 @@ export function ItemsSvg(props: any) {
         />
       </G>
       <Defs>
-        <clipPath id="clip0_14_181">
-          <rect width="42" height="42" fill="white" />
-        </clipPath>
+        <ClipPath id="clip0_14_181">
+          <Rect width="42" height="42" fill="white" />
+        </ClipPath>
       </Defs>
     </Svg>
   );

@@ -18,7 +18,7 @@ export const AppNavigator = () => {
   const appState = useAppSelector(state => state.loader.state);
 
   useEffect(() => {
-    setTimeout(() => dispatch(loaderActions.setState('PROFILE_FILLED'))), 2000;
+    setTimeout(() => dispatch(loaderActions.setState('PROFILE_FILLED')), 2000);
   }, [dispatch]);
   return (
     <NavigationContainer ref={navigationRef}>
