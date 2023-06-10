@@ -1,4 +1,6 @@
 export const colors = {
+  white: '#fff',
+  black: '#000',
   grey100: '#A09B8C',
   grey150: '#5B5A56',
   grey200: '#3C3C41',
@@ -7,7 +9,6 @@ export const colors = {
   hextechBlack: '#010A13',
   gold100: '#F0E6D2',
   gold200: '#C8AA6E',
-  gold300: '#C8AA6E',
   gold400: '#C8983C',
   gold500: '#785A28',
   gold600: '#463714',
