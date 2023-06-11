@@ -1,8 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {Region} from '../../../models/user';
 
 type UserState = {
-  region: Region;
   summonerName: string;
   id: string;
   accountId: string;
@@ -11,7 +9,6 @@ type UserState = {
 };
 
 const initialState: UserState = {
-  region: undefined,
   summonerName: '',
   id: '',
   accountId: '',
