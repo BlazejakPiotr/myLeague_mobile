@@ -7,10 +7,12 @@ import {
 import {persistReducer} from 'redux-persist';
 import loaderSlice from './reducers/loader/loader.slice';
 import userSlice from './reducers/user/user.slice';
+import dataDragonSlice from './reducers/dataDragon/dataDragon.slice';
 
 const rootReducer = combineReducers({
   loader: loaderSlice,
   user: userSlice,
+  dataDragon: dataDragonSlice,
 });
 
 const persistedReducer = persistReducer(
