@@ -26,8 +26,9 @@ interface AppTextI extends TextProps {
   color?: string;
   fFamily?: FontFamily;
   align?: 'center' | 'left' | 'right' | 'justify';
-
   children?: React.ReactNode;
+  mBot?: number;
+  mTop?: number;
 }
 
 function AppText({
@@ -35,6 +36,8 @@ function AppText({
   s = 'm',
   color = getColors('gold100'),
   fFamily,
+  mBot,
+  mTop,
   ...props
 }: AppTextI) {
   const textSize = {
@@ -61,6 +64,8 @@ function AppText({
         color,
         // @ts-ignore
         ...props.style,
+        marginBottom: mBot ? mBot : 0,
+        marginTop: mTop ? mTop : 0,
       }}>
       {props.children}
     </RNText>

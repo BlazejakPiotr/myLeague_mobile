@@ -28,6 +28,7 @@ const AppButton = (props: IButton, {onPress}: {onPress: () => void}) => {
     props.height && {height: props.height},
     props.radius ? {radius: props.radius} : {borderRadius: 5},
     props.padding && {padding: props.padding},
+    props.paddingHorizontal && {paddingHorizontal: props.paddingHorizontal},
     props.paddingVertical && {paddingVertical: props.paddingVertical},
     {
       display: 'flex',
