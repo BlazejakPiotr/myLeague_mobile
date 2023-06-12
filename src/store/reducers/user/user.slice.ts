@@ -19,7 +19,11 @@ const initialState: UserState = {
 const userSlice = createSlice({
   name: 'user',
   initialState,
-  reducers: {},
+  reducers: {
+    setUserName: (state, action: PayloadAction<string>) => {
+      state.summonerName = action.payload.trim();
+    },
+  },
 });
 
 export const userActions = userSlice.actions;
