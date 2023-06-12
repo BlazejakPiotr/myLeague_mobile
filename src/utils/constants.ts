@@ -1,17 +1,45 @@
 import {Dimensions} from 'react-native';
-import {IPlatforms} from '../models/platforms';
+import {IRegion, IRegionDetails} from '../models/locales';
 
 export const {height: DEVICE_HEIGHT, width: DEVICE_WIDTH} =
   Dimensions.get('screen');
 
-export const PLATFORMS: IPlatforms[] = ['BR1', 'EUN1', 'EUW1', 'JP1', 'KR'];
+export const PLATFORMS: IRegion[] = ['BR1', 'EUN1', 'EUW1', 'JP1', 'KR'];
+
+export const LOCALES: IRegionDetails[] = [
+  {
+    id: 'BR1',
+    name: 'Brazil',
+    routing: 'br1.api.riotgames.com',
+    continent: 'AMERICAS',
+  },
+  {
+    id: 'EUN1',
+    name: 'Europe Nordic & East',
+    routing: 'eune1.api.riotgames.com',
+    continent: 'EUROPE',
+  },
+  {
+    id: 'EUW1',
+    name: 'Europe West',
+    routing: 'eune1.api.riotgames.com',
+    continent: 'EUROPE',
+  },
+  {
+    id: 'JP1',
+    name: 'Japan',
+    routing: 'jp1.api.riotgames.com',
+    continent: 'ASIA',
+  },
+  {
+    id: 'KR',
+    name: 'Korea',
+    routing: 'kr.api.riotgames.com',
+    continent: 'ASIA',
+  },
+];
 
 export const PLATFORM_ROUTING = {
-  BR1: 'br1.api.riotgames.com',
-  EUN1: 'eun1.api.riotgames.com',
-  EUW1: 'euw1.api.riotgames.com',
-  JP1: 'jp1.api.riotgames.com',
-  KR: 'kr.api.riotgames.com',
   // LA1:	'la1.api.riotgames.com'
   // LA2:	la2.api.riotgames.com
   // NA1	:na1.api.riotgames.com

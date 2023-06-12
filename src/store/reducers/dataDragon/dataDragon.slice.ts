@@ -1,16 +1,16 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {IPlatforms, IRegions} from '../../../models/platforms';
+import {IContinent, IRegion} from '../../../models/locales';
 
 type DataDragonState = {
   version?: string;
-  platform: IPlatforms;
-  region: IRegions;
+  region: IRegion;
+  continent: IContinent;
 };
 
 const initialState: DataDragonState = {
   version: '',
-  platform: 'EUW1',
-  region: 'EUROPE',
+  region: 'EUW1',
+  continent: 'EUROPE',
 };
 
 const dataDragonSlice = createSlice({
@@ -20,11 +20,12 @@ const dataDragonSlice = createSlice({
     setVersion: (state, action: PayloadAction<string[]>) => {
       state.version = action.payload[0];
     },
-    setPlatform: (state, action: PayloadAction<IPlatforms>) => {
-      state.platform = action.payload;
-    },
-    setRegion: (state, action: PayloadAction<IRegions>) => {
-      state.version = action.payload;
+    setRegion: (
+      state,
+      action: PayloadAction<{region: IRegion; continent: IContinent}>,
+    ) => {
+      state.region = action.payload.region;
+      state.continent = action.payload.continent;
     },
   },
 });
