@@ -63,5 +63,8 @@ buck-out/
 /ios/Pods/
 /vendor/bundle/
 
+#env
+.env
+
 # src 
 /src/assets/fonts

@@ -1,20 +1,23 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {IContinent, IRegion} from '../../../models/locales';
+import {IRegionDetails} from '../../../models/locales';
 import {IChampionsData} from '../../../models/champion';
 import {IItemsData} from '../../../models/item';
 
 type DataState = {
   version?: string;
-  region: IRegion;
-  continent: IContinent;
+  region: IRegionDetails;
   champions: IChampionsData;
   items: IItemsData;
 };
 
 const initialState: DataState = {
   version: '',
-  region: 'EUW1',
-  continent: 'EUROPE',
+  region: {
+    routing: '',
+    id: undefined,
+    name: '',
+    continent: undefined,
+  },
   champions: {data: {}},
   items: {data: {}},
 };
@@ -26,12 +29,8 @@ const dataSlice = createSlice({
     setVersion: (state, action: PayloadAction<string | undefined>) => {
       state.version = action.payload;
     },
-    setRegion: (
-      state,
-      action: PayloadAction<{region: IRegion; continent: IContinent}>,
-    ) => {
-      state.region = action.payload.region;
-      state.continent = action.payload.continent;
+    setRegion: (state, action: PayloadAction<IRegionDetails>) => {
+      state.region = action.payload;
     },
     setChampions: (state, action: PayloadAction<IChampionsData>) => {
       state.champions = action.payload;

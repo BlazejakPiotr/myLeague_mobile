@@ -7,7 +7,7 @@ import {
   fetchItems,
   getClientVersion,
 } from '../reducers/data/data.thunk';
-import instanceData from '../../utils/axios/instance';
+import {instanceData, instanceSummoners} from '../../utils/axios/instance';
 import {config} from '../../config';
 
 export const initApp =

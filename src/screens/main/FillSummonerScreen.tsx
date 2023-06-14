@@ -17,16 +17,11 @@ const FillSummonerScreen: React.FC = () => {
   const [region, setRegion] = useState<IRegionDetails>();
   const [name, setName] = useState<string>('');
   const dispatch = useAppDispatch();
-  const store = useAppSelector(state => state);
+  const store = useAppSelector(state => state.data);
 
   const onClick = async () => {
     if (region && name) {
-      dispatch(
-        dataActions.setRegion({
-          region: region.id,
-          continent: region.continent,
-        }),
-      );
+      dispatch(dataActions.setRegion(region));
       dispatch(userActions.setUserName(name));
     }
   };
@@ -90,9 +85,7 @@ const FillSummonerScreen: React.FC = () => {
       </View>
       <AppButton
         color={getColors('gold500')}
-        onPress={() =>
-          console.log(store.user.summonerName, store.dataDragon.region)
-        }
+        onPress={() => console.log(LOCALES.find(el => el.id === region?.id))}
         padding={15}
         paddingHorizontal={60}>
         <AppText s="l" fFamily="BeaufortforLOL-Heavy">

@@ -1,6 +1,6 @@
 import {IChampionsData} from '../../models/champion';
 import {IItemsData} from '../../models/item';
-import instanceData from '../../utils/axios/instance';
+import {instanceData} from '../../utils/axios/instance';
 
 export const DataApi = {
   async getAllVersions() {
