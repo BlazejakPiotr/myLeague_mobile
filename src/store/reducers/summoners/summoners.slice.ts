@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
-type UserState = {
+type SummonersState = {
   summonerName: string;
   id: string;
   accountId: string;
@@ -8,7 +8,7 @@ type UserState = {
   tagLine: string;
 };
 
-const initialState: UserState = {
+const initialState: SummonersState = {
   summonerName: '',
   id: '',
   accountId: '',
@@ -16,8 +16,8 @@ const initialState: UserState = {
   tagLine: '',
 };
 
-const userSlice = createSlice({
-  name: 'user',
+const summonersSlice = createSlice({
+  name: 'summoners',
   initialState,
   reducers: {
     setUserName: (state, action: PayloadAction<string>) => {
@@ -26,5 +26,5 @@ const userSlice = createSlice({
   },
 });
 
-export const userActions = userSlice.actions;
-export default userSlice.reducer;
+export const userActions = summonersSlice.actions;
+export default summonersSlice.reducer;

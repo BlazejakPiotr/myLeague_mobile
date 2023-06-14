@@ -6,13 +6,13 @@ import {
 } from '@reduxjs/toolkit';
 import {persistReducer} from 'redux-persist';
 import loaderSlice from './reducers/loader/loader.slice';
-import userSlice from './reducers/user/user.slice';
-import dataDragonSlice from './reducers/dataDragon/dataDragon.slice';
+import summonersSlice from './reducers/summoners/summoners.slice';
+import dataSlice from './reducers/data/data.slice';
 
 const rootReducer = combineReducers({
   loader: loaderSlice,
-  user: userSlice,
-  dataDragon: dataDragonSlice,
+  summoners: summonersSlice,
+  data: dataSlice,
 });
 
 const persistedReducer = persistReducer(

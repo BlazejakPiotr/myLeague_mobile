@@ -1,8 +1,8 @@
 import axios from 'axios';
 import {config} from '../../config';
 
-export const instance = axios.create({
+export const instanceData = axios.create({
   baseURL: config.dataDragonUrl,
 });
 
-export default instance;
+export default instanceData;

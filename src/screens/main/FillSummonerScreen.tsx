@@ -10,8 +10,8 @@ import {IRegionDetails} from '../../models/locales';
 import {ChevonBottomSvG} from '../../assets/svg/ChevonBottom';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {useAppDispatch, useAppSelector} from '../../store/hook';
-import {dataDragonActions} from '../../store/reducers/dataDragon/dataDragon.slice';
-import {userActions} from '../../store/reducers/user/user.slice';
+import {dataActions} from '../../store/reducers/data/data.slice';
+import {userActions} from '../../store/reducers/summoners/summoners.slice';
 
 const FillSummonerScreen: React.FC = () => {
   const [region, setRegion] = useState<IRegionDetails>();
@@ -22,7 +22,7 @@ const FillSummonerScreen: React.FC = () => {
   const onClick = async () => {
     if (region && name) {
       dispatch(
-        dataDragonActions.setRegion({
+        dataActions.setRegion({
           region: region.id,
           continent: region.continent,
         }),

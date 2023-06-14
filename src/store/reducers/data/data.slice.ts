@@ -3,7 +3,7 @@ import {IContinent, IRegion} from '../../../models/locales';
 import {IChampionsData} from '../../../models/champion';
 import {IItemsData} from '../../../models/item';
 
-type DataDragonState = {
+type DataState = {
   version?: string;
   region: IRegion;
   continent: IContinent;
@@ -11,7 +11,7 @@ type DataDragonState = {
   items: IItemsData;
 };
 
-const initialState: DataDragonState = {
+const initialState: DataState = {
   version: '',
   region: 'EUW1',
   continent: 'EUROPE',
@@ -19,8 +19,8 @@ const initialState: DataDragonState = {
   items: {data: {}},
 };
 
-const dataDragonSlice = createSlice({
-  name: 'dataDragon',
+const dataSlice = createSlice({
+  name: 'data',
   initialState,
   reducers: {
     setVersion: (state, action: PayloadAction<string | undefined>) => {
@@ -42,5 +42,5 @@ const dataDragonSlice = createSlice({
   },
 });
 
-export const dataDragonActions = dataDragonSlice.actions;
-export default dataDragonSlice.reducer;
+export const dataActions = dataSlice.actions;
+export default dataSlice.reducer;

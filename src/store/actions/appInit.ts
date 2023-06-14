@@ -1,25 +1,25 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {AppThunk} from '../AppThunk';
 import {loaderActions} from '../reducers/loader/loader.slice';
-import {dataDragonActions} from '../reducers/dataDragon/dataDragon.slice';
+import {dataActions} from '../reducers/data/data.slice';
 import {
   fetchChampions,
   fetchItems,
   getClientVersion,
-} from '../reducers/dataDragon/dataDragon.thunk';
-import instance from '../../utils/axios/instance';
+} from '../reducers/data/data.thunk';
+import instanceData from '../../utils/axios/instance';
 import {config} from '../../config';
 
 export const initApp =
   (): AppThunk<Promise<void>> => async (dispatch, getState) => {
     try {
-      instance.defaults.baseURL = config.dataDragonUrl;
+      instanceData.defaults.baseURL = config.dataDragonUrl;
       await getClientVersion().then(res => {
-        dispatch(dataDragonActions.setVersion(res));
-        instance.defaults.baseURL =
+        dispatch(dataActions.setVersion(res));
+        instanceData.defaults.baseURL =
           config.dataDragonUrl +
           'cdn/' +
-          getState().dataDragon.version +
+          getState().data.version +
           '/data/en_US/';
       });
 
