@@ -9,7 +9,7 @@ const defaultConfig = {
 const configs = {
   development: {
     ...defaultConfig,
-    dataDragonUrl: 'https://ddragon.leagueoflegends.com/api/',
+    dataDragonUrl: 'https://ddragon.leagueoflegends.com/',
     riotUrl: 'api.riotgames.com/lol/',
   },
 };
