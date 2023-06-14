@@ -5,7 +5,7 @@ import AppButton from '../../components/_common/AppButton';
 import AppText from '../../components/_common/AppText';
 import FastImage from 'react-native-fast-image';
 import SelectDropdown from 'react-native-select-dropdown';
-import {LOCALES} from '../../utils/constants';
+import {DEVICE_WIDTH, LOCALES} from '../../utils/constants';
 import {IRegionDetails} from '../../models/locales';
 import {ChevonBottomSvG} from '../../assets/svg/ChevonBottom';
 import {RFValue} from 'react-native-responsive-fontsize';
@@ -28,15 +28,19 @@ const FillSummonerScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <FastImage
-        resizeMode="contain"
-        source={require('../../assets/img/myLeague_light.png')}
-        style={styles.logo}
-      />
-      <View style={{width: '100%'}}>
-        <AppText fFamily="BeaufortforLOL-Bold" s="l" mBot={RFValue(20)}>
-          SIGN IN
-        </AppText>
+      <View style={{flex: 1}}>
+        <FastImage
+          resizeMode="contain"
+          source={require('../../assets/img/LoL_Logo_Rendered.png')}
+          style={styles.logo}
+        />
+      </View>
+      <View style={{flex: 2}}>
+        <View>
+          <AppText fFamily="BeaufortforLOL-Bold" s="l" mBot={RFValue(20)}>
+            SIGN IN
+          </AppText>
+        </View>
         <AppText
           fFamily="Spiegel_TT_SemiBold"
           align="left"
@@ -51,7 +55,7 @@ const FillSummonerScreen: React.FC = () => {
           dropdownStyle={styles.dropdown}
           renderDropdownIcon={() => <ChevonBottomSvG />}
           rowStyle={styles.dropdownRow}
-          buttonStyle={styles.dropdownBtn}
+          buttonStyle={[styles.inputField, {width: '100%'}]}
           renderCustomizedButtonChild={selectedItem => (
             <AppText fFamily="Spiegel_TT_Regular" s="s" align="left">
               {selectedItem ? selectedItem.name : 'Select region'}
@@ -76,22 +80,29 @@ const FillSummonerScreen: React.FC = () => {
           color={getColors('grey100')}>
           Summoners name
         </AppText>
+
         <TextInput
-          style={styles.dropdownBtn}
+          style={[styles.inputField]}
           onChangeText={v => setName(v.trim())}
           placeholder="Your in-game name"
           placeholderTextColor={getColors('grey150')}
         />
+
+        <View style={{alignItems: 'center'}}>
+          <AppButton
+            width={200}
+            color={getColors('gold500')}
+            onPress={() =>
+              console.log(LOCALES.find(el => el.id === region?.id))
+            }
+            padding={15}
+            paddingHorizontal={60}>
+            <AppText s="l" fFamily="BeaufortforLOL-Heavy">
+              LOGIN
+            </AppText>
+          </AppButton>
+        </View>
       </View>
-      <AppButton
-        color={getColors('gold500')}
-        onPress={() => console.log(LOCALES.find(el => el.id === region?.id))}
-        padding={15}
-        paddingHorizontal={60}>
-        <AppText s="l" fFamily="BeaufortforLOL-Heavy">
-          LOGIN
-        </AppText>
-      </AppButton>
     </View>
   );
 };
@@ -107,8 +118,8 @@ const styles = StyleSheet.create({
     backgroundColor: getColors('hextechBlack'),
   },
   logo: {resizeMode: 'cover', aspectRatio: 1, width: '70%'},
-  dropdownBtn: {
-    width: '100%',
+  inputField: {
+    alignSelf: 'stretch',
     backgroundColor: getColors('greyCool'),
     borderColor: getColors('grey150'),
     borderWidth: 1,
