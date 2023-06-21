@@ -1,18 +1,32 @@
-import {StyleSheet, View} from 'react-native';
-import AppButton from '../../components/_common/AppButton';
-import AppText from '../../components/_common/AppText';
+import {StyleSheet} from 'react-native';
 import {getColors} from '../../utils/theme/theme';
+import {useAppSelector} from '../../store/hook';
+import {Top} from '../../navigation/MainStack';
+import SummonerTabBar from '../../navigation/SummonerTabStack';
+import OverviewTab from '../summoner/OverviewTab';
 
 const HomeScreen: React.FC = () => {
-  return <View style={styles.container}></View>;
+  const state = useAppSelector(state => state.summoners.user);
+  return (
+    <Top.Navigator
+      tabBar={props => <SummonerTabBar {...props} />}
+      style={{
+        flexGrow: 1,
+      }}>
+      <Top.Screen name="Overview" component={OverviewTab} />
+      <Top.Screen
+        name="Matches"
+        component={OverviewTab}
+        options={{title: 'Match history'}}
+      />
+      <Top.Screen name="Champions" component={OverviewTab} />
+      <Top.Screen name="Stats" component={OverviewTab} />
+    </Top.Navigator>
+  );
 };
 
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignContent: 'center',
-  },
+  container: {backgroundColor: getColors('red')},
 });
