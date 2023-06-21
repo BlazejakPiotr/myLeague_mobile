@@ -9,6 +9,16 @@ import {
 } from '../reducers/data/data.thunk';
 import {instanceData, instanceSummoners} from '../../utils/axios/instance';
 import {config} from '../../config';
+//@ts-ignore
+import {REACT_APP_API_KEY} from '@env';
+import {LOCALES} from '../../utils/constants';
+import {
+  getListOfMatchIds,
+  getMatchById,
+  getSummonerByName,
+  getSummonerRankedResults,
+} from '../reducers/summoners/summoners.thunk';
+import {matchActions} from '../reducers/matches/matches.slice';
 
 export const initApp =
   (): AppThunk<Promise<void>> => async (dispatch, getState) => {
@@ -25,12 +35,33 @@ export const initApp =
 
       await Promise.all([dispatch(fetchChampions()), dispatch(fetchItems())]);
 
-      const summonerName = await AsyncStorage.getItem('summonerName');
-      const platform = await AsyncStorage.getItem('platform');
+      const summonerName = await AsyncStorage.getItem('name');
+      const region = await AsyncStorage.getItem('region');
 
-      if (!summonerName || !platform) {
+      if (!summonerName || !region) {
         dispatch(loaderActions.setState('NEED_FILL'));
       } else {
+        const routing = LOCALES.find(el => el.id === region);
+        instanceSummoners.defaults.baseURL = `https://${routing?.routing}/`;
+        instanceSummoners.defaults.params = {
+          api_key: REACT_APP_API_KEY,
+        };
+        await dispatch(getSummonerByName(summonerName)).then(data =>
+          dispatch(getSummonerRankedResults(data.id)),
+        );
+
+        instanceSummoners.defaults.baseURL = `https://${routing?.continent}.api.riotgames.com/`;
+        instanceSummoners.defaults.params = {
+          api_key: REACT_APP_API_KEY,
+        };
+        await dispatch(getListOfMatchIds()).then(res => {
+          const data = res.slice(0, 10);
+          data.forEach(id => dispatch(getMatchById(id)));
+          dispatch(matchActions.setMatchIds(res.slice(9, res.length - 1)));
+          console.log(getState().match.matchIds.length);
+        });
+
+        dispatch(dataActions.setRegion(routing));
         dispatch(loaderActions.setState('PROFILE_FILLED'));
       }
     } catch (error) {
