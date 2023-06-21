@@ -6,7 +6,7 @@ export const {height: DEVICE_HEIGHT, width: DEVICE_WIDTH} =
   Dimensions.get('screen');
 
 export const BOTTOM_TAB_HEIGHT = RFValue(80);
-export const APP_PADDING = RFValue(20);
+export const APP_PADDING = RFValue(30);
 
 export const PLATFORMS: IRegion[] = ['BR1', 'EUN1', 'EUW1', 'JP1', 'KR'];
 
