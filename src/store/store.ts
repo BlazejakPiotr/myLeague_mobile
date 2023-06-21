@@ -8,11 +8,13 @@ import {persistReducer} from 'redux-persist';
 import loaderSlice from './reducers/loader/loader.slice';
 import summonersSlice from './reducers/summoners/summoners.slice';
 import dataSlice from './reducers/data/data.slice';
+import matchesSlice from './reducers/matches/matches.slice';
 
 const rootReducer = combineReducers({
   loader: loaderSlice,
   summoners: summonersSlice,
   data: dataSlice,
+  match: matchesSlice,
 });
 
 const persistedReducer = persistReducer(
