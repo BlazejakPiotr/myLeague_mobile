@@ -1,30 +1,31 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {ISummoner} from '../../../models/summoner';
 
 type SummonersState = {
-  summonerName: string;
-  id: string;
-  accountId: string;
-  puuid: string;
-  tagLine: string;
+  user: ISummoner;
 };
 
 const initialState: SummonersState = {
-  summonerName: '',
-  id: '',
-  accountId: '',
-  puuid: '',
-  tagLine: '',
+  user: {
+    name: '',
+    id: '',
+    accountId: '',
+    puuid: '',
+    profileIconId: 0,
+    revisionDate: 0,
+    summonerLevel: 0,
+  },
 };
 
 const summonersSlice = createSlice({
   name: 'summoners',
   initialState,
   reducers: {
-    setUserName: (state, action: PayloadAction<string>) => {
-      state.summonerName = action.payload.trim();
+    setUser: (state, action: PayloadAction<ISummoner>) => {
+      state.user = action.payload;
     },
   },
 });
 
-export const userActions = summonersSlice.actions;
+export const summonerActions = summonersSlice.actions;
 export default summonersSlice.reducer;
