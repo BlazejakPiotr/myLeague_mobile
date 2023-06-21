@@ -1,18 +1,22 @@
 import {Dimensions} from 'react-native';
 import {IRegion, IRegionDetails} from '../models/locales';
+import {RFValue} from 'react-native-responsive-fontsize';
 
 export const {height: DEVICE_HEIGHT, width: DEVICE_WIDTH} =
   Dimensions.get('screen');
 
+export const BOTTOM_TAB_HEIGHT = RFValue(80);
+export const APP_PADDING = RFValue(20);
+
 export const PLATFORMS: IRegion[] = ['BR1', 'EUN1', 'EUW1', 'JP1', 'KR'];
 
 export const LOCALES: IRegionDetails[] = [
-  {
-    id: 'BR1',
-    name: 'Brazil',
-    routing: 'br1.api.riotgames.com',
-    continent: 'AMERICAS',
-  },
+  // {
+  //   id: 'BR1',
+  //   name: 'Brazil',
+  //   routing: 'br1.api.riotgames.com',
+  //   continent: 'AMERICAS',
+  // },
   {
     id: 'EUN1',
     name: 'Europe Nordic & East',
@@ -22,21 +26,21 @@ export const LOCALES: IRegionDetails[] = [
   {
     id: 'EUW1',
     name: 'Europe West',
-    routing: 'eune1.api.riotgames.com',
+    routing: 'euw1.api.riotgames.com',
     continent: 'EUROPE',
   },
-  {
-    id: 'JP1',
-    name: 'Japan',
-    routing: 'jp1.api.riotgames.com',
-    continent: 'ASIA',
-  },
-  {
-    id: 'KR',
-    name: 'Korea',
-    routing: 'kr.api.riotgames.com',
-    continent: 'ASIA',
-  },
+  // {
+  //   id: 'JP1',
+  //   name: 'Japan',
+  //   routing: 'jp1.api.riotgames.com',
+  //   continent: 'ASIA',
+  // },
+  // {
+  //   id: 'KR',
+  //   name: 'Korea',
+  //   routing: 'kr.api.riotgames.com',
+  //   continent: 'ASIA',
+  // },
 ];
 
 export const PLATFORM_ROUTING = {
