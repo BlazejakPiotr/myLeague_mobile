@@ -8,7 +8,6 @@ import {getColors} from '../utils/theme/theme';
 import {useAppDispatch, useAppSelector} from '../store/hook';
 import FillSummonerScreen from '../screens/main/FillSummonerScreen';
 import {MainStack} from './MainStack';
-import {loaderActions} from '../store/reducers/loader/loader.slice';
 import SplashScreen from 'react-native-splash-screen';
 import {initApp} from '../store/actions/appInit';
 
