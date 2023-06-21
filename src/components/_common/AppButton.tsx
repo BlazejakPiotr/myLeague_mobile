@@ -32,7 +32,7 @@ const AppButton = (props: IButton, {onPress}: {onPress: () => void}) => {
     props.paddingVertical && {paddingVertical: props.paddingVertical},
     {
       display: 'flex',
-      marginTop: 30,
+
       alignItems: 'center',
       justifyContent: 'center',
     },
